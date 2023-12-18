@@ -1,0 +1,190 @@
+body {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  margin: 0 auto;
+}
+.phone-bg {
+  background-image: url(images/Color_Flash.gif);
+  background-color: #fbfbfb;
+  display: flex;
+  grid-column: 2 / 2;
+  grid-row: 1/4;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+}
+
+.right {
+  background-color: blueviolet;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 2px solid black; */
+  grid-column: 1 / 2;
+  grid-row: 3/3;
+}
+.muis-gif {
+  background-color: rgb(13, 13, 143);
+
+  /* border: 2px solid black; */
+  grid-column: 1 / 2;
+  grid-row: 0/3;
+}
+.content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.telefoon {
+  max-height: 500px;
+}
+.lo {
+  display: flex;
+}
+
+.audio {
+  color: #000;
+  background-color: #320594;
+  border-radius: 20px;
+  padding: 20px;
+  transform: translateY(50%, -50%);
+  transform: translate3d(50%, -50%);
+  margin-top: 10px;
+  animation: move-back-forth 0.01s ease-in-out infinite;
+}
+
+@keyframes move-back-forth {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.app {
+  color: #000000;
+  transform: translate(50%, -90%);
+  display: flex;
+  white-space: inherit;
+  animation: move-up-down 0.1s ease-in-out infinite;
+}
+
+.app:hover {
+  transform: rotateX(960deg);
+  cursor: pointer;
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* hier is de app animation */
+.app2 {
+  color: #000000;
+  transform: translate(50%, -300%);
+  display: flex;
+  margin-top: 70px;
+}
+
+.app2:hover {
+  transform: rotateX(960deg);
+  cursor: pointer;
+}
+
+/* hier is de click me img met de code java  */
+#beweegbareAfbeelding {
+  position: absolute;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 1280px) {
+  .telefoon {
+    max-height: 600px;
+  }
+  .app {
+    max-width: 250px;
+  }
+  .app2 {
+    max-width: 250px;
+  }
+  .content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .telefoon {
+    max-height: 600px;
+  }
+  .content {
+    max-width: 600px;
+  }
+  .lo {
+    max-width: 100px;
+  }
+  .app {
+    max-width: 250px;
+  }
+  .app2 {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 430px) {
+  .telefoon {
+    max-height: 400px;
+  }
+  #beweegbareAfbeelding {
+    max-width: 100px;
+  }
+  .muis {
+    max-width: 225px;
+  }
+  .lo {
+    max-width: 40px;
+  }
+  .app {
+    left: 10px;
+    max-width: 85px;
+  }
+  .app2 {
+    max-width: 85px;
+  }
+}
