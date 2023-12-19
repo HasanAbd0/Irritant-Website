@@ -24,7 +24,7 @@ beweegAfbeeldingAutomatisch();
 const lightBoxClose = () => {
   document.getElementById("lol").style.disp = "none";
 };
-alert("Don't inter this website : 324234234");
-alert("Don't inter this website: 324234234");
-alert("Don't inter this website: 324234234");
-alert("Don't inter this website: 324234234");
+// alert("Don't inter this website : 324234234");
+// alert("Don't inter this website: 324234234");
+// alert("Don't inter this website: 324234234");
+// alert("Don't inter this website: 324234234");
