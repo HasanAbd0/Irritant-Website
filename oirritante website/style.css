@@ -183,25 +183,25 @@ body {
 
 @media (max-width: 450px)  {
   .telefoon {
-    max-width: 200px;
+    max-width: 220px;
   }
   #beweegbareAfbeelding {
-    max-width: 50px;
+    max-width: 100px;
   }
   .muis1{
-    max-width: 50px;
+    max-width: 200px;
   }
   .muis {
-    max-width: 50px;
+    max-width: 200px;
   }
   .lo {
     max-width: 40px;
   }
   .app {
   
-    max-width: 55px;
+    max-width: 85px;
   }
   .app2 {
-    max-width: 55px;
+    max-width: 85px;
   }
 }
